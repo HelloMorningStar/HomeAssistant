@@ -12,5 +12,4 @@
 4,iPhone
 
 安装HomeAssistant
-python3 -m pip install homeassistant
-hass --open-ui
+https://www.home-assistant.io/docs/installation/virtualenv/
