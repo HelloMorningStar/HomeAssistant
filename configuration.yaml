@@ -23,6 +23,15 @@ introduction:
 # http:
 #   base_url: example.duckdns.org:8123
 
+# 配置自动发现设备（禁止发现/允许发现），其实可以用于删除一些自动发现的设备 
+# 参考 https://www.home-assistant.io/components/discovery/
+discovery:
+  ignore:
+    - yeelight
+    - xiaomi_gw
+  enable:
+    - homekit
+
 # Sensors
 sensor:
   # Weather prediction
