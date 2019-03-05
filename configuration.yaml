@@ -41,4 +41,21 @@ xiaomi_aqara:
   gateways:
     - mac: xx6c0788xxxx
       key: xxxxp98kseadpxxx
+      
+fan:
+# xiaomi air purifier
+  - platform: xiaomi_miio
+    name: 空气净化器
+    host: 192.168.xx.xx
+    token: a3xxxxx69d16229xxx69e3b77dc6dxxx
+    model: zhimi.airpurifier.v6
 
+light:
+# yeelight彩光灯
+  - platform: yeelight
+    devices:
+      192.168.xx.xxx:
+        name: 台灯
+        transition: 1000
+        use_music_mode: True #(defaults to False)
+        save_on_change: False #(defaults to True)
