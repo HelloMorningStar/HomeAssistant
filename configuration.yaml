@@ -68,3 +68,22 @@ light:
         transition: 1000
         use_music_mode: True #(defaults to False)
         save_on_change: False #(defaults to True)
+
+# 小米插座
+switch:
+  - platform: xiaomi_miio
+    name: 北阳台取暖器
+    host: 192.168.xx.xx
+    token: 9815792xxxxxc0a7949cxxx6dab9bcxx
+    name: 抽油烟机
+    host: 192.168.xx.xx
+    token: d464d0f575a7c5cd08e9041dd2xxxxxx
+    name: 鱼缸灯
+    host: 192.168.xx.xx
+    token: 1b268c9e0fba8238cecf9f9d85xxxxxx
+    name: 音响电源
+    host: 192.168.xx.xxx
+    token: 3776cd1c6c914fb46111994470xxxxxxx
+    name: 书桌电源
+    host: 192.168.x.xxx
+    token: 13a2132df24913d88c6de07a0dfxxxxxx
