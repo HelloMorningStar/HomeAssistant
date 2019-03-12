@@ -35,7 +35,49 @@ discovery:
 # Sensors
 sensor:
   # Weather prediction
-  - platform: yr
+#  - platform: yr
+#    name: Weather
+#    forecast: 24
+#    monitored_conditions:
+#     - symbol
+#     - temperature 
+#     - precipitation 
+#     - windSpeed 
+#     - pressure 
+#     - windDirection 
+#     - humidity
+
+  - platform: darksky
+    api_key: xxxxdf7xxx33axxxxbce175axxx7xxxx
+    # 监测内容，可选
+    monitored_conditions:
+      - summary    
+#        - precip_type    
+#        - precip_intensity    
+#        - precip_probability    
+      - temperature   
+      - apparent_temperature    
+#        - dew_point    
+#        - wind_speed    
+#        - wind_bearing    
+#        - cloud_cover    
+#        - humidity    
+#        - pressure    
+#        - visibility    
+#        - ozone    
+#        - minutely_summary    
+#        - hourly_summary    
+      - daily_summary    
+#        - temperature_max   
+#        - temperature_min    
+#        - apparent_temperature_max    
+#        - apparent_temperature_min    
+#        - precip_intensity_max    
+#        - uv_index    
+    #单位，可选，默认 auto
+#    units: auto
+    #数据更新时间间隔，默认 2 分钟
+#    update_interval：00:02   
 
 # Text to speech
 tts:
@@ -91,3 +133,7 @@ switch:
     name: 书桌电源
     host: 192.168.x.xxx
     token: 13a2132df24913d88c6de07a0dfxxxxxx
+    
+# Apple 
+homekit:
+ios:
